@@ -1,0 +1,244 @@
+.nashrin-settings-container {
+  position: relative;
+  margin: 10px 0 0 10px;
+  padding: 0;
+  font-family: tahoma;
+  direction: rtl;
+  text-align: right;
+}
+
+.nashrin-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  background: rgba( 255, 255, 255, .8) url('loading.gif') 50% 50% no-repeat;
+}
+
+#nashrin-script-form fieldset {
+  position: relative;
+  box-sizing: border-box;
+  max-width: 100%;
+  height: 95px;
+  padding: 10px;
+  border: 2px dashed #9e9e9e;
+}
+
+#nashrin-script-form legend {
+  padding: 0 5px 5px 5px;
+  font-weight: bold;
+  margin-left: 20px;
+  font-size: 100%;
+  font-size: 16px;
+  color: rgb(0, 115, 170);
+}
+
+#nashrin-script-form textarea {
+  direction: ltr;
+  font-size: 15px;
+  box-sizing: border-box;
+  padding: 3px 8px 3px 60px;
+  height: 70px;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  resize: none;
+}
+
+#nashrin-script-form input[type=submit] {
+  position: absolute;
+  left: 10px;
+  top: 11px;
+  width: 50px;
+  height: 50px;
+  border: none;
+  margin: 0;
+  background-color: rgba(184, 240, 20, 0.6);
+}
+
+#nashrin-script-form input[type=submit]:hover {
+  background-color: rgb(184, 240, 20);
+}
+
+@media (min-width: 550px) and (max-width: 960px) {
+  #nashrin-script-form fieldset {
+    height: 95px;
+  }
+  #nashrin-script-form input[type=submit] {
+    height: 50px;
+  }
+}
+
+@media (max-width: 550px) {
+  #nashrin-script-form fieldset {
+    height: 120px;
+  }
+  #nashrin-script-form input[type=submit] {
+    height: 75px;
+  }
+}
+
+.add-new-widget {
+  font-weight: bold;
+}
+
+#new-widget-sample {
+  display: none;
+}
+
+.nashrin-widget-form {
+  position: relative;
+  float: right;
+  width: 49.5%;
+  border: 1px solid #f2f2f2;
+  box-sizing: border-box;
+  border: 2px dashed #9e9e9e;
+  padding: 6px;
+  margin-bottom: 15px;
+  background-color: white;
+  transition: all 1s;
+}
+
+.nashrin-widget-form:nth-child(odd) {
+  margin-left: 0.5%;
+}
+
+.nashrin-widget-form:nth-child(even) {
+  margin-right: 0.5%;
+}
+
+@media (max-width: 960px) {
+  .nashrin-widget-form {
+    box-sizing: border-box;
+    width: 100%;
+  }
+  .nashrin-widget-form:nth-child(odd) {
+    margin-left: 0;
+  }
+  .nashrin-widget-form:nth-child(even) {
+    margin-right: 0;
+  }
+}
+
+.nashrin-widget-form .widget-delete {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 30px;
+  height: 24px;
+  background: rgba(255, 0, 0, 0.5);
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  padding: 0 0 8px;
+  text-align: center;
+  line-height: 30px;
+  transition: all .5s;
+  cursor: pointer;
+}
+
+.nashrin-widget-form .widget-delete:hover {
+  background: red;
+}
+
+.nashrin-widget-form .widget-title {
+  font-family: tahoma;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 8px 12px 12px;
+}
+
+.nashrin-widget-form fieldset {
+  padding: 0 10px 3px 10px;
+  margin: 5px 0;
+  border: 1px dashed #9e9e9e;
+}
+
+.nashrin-widget-form fieldset .widget-snippet {
+  width: 100%;
+  direction: ltr;
+  height: 30px;
+  margin-bottom: 8px;
+}
+
+.nashrin-widget-form legend {
+  padding: 0 5px 5px 5px;
+  font-weight: bold;
+  margin-left: 20px;
+  font-size: 100%;
+  color: black;
+}
+
+.nashrin-widget-form fieldset.locationgroup .radio-item {
+  margin: 7px;
+}
+
+.nashrin-widget-form fieldset.locationgroup input[type='text'] {
+  position: relative;
+  top: 3px;
+  width: 60px;
+  height: 28px;
+}
+
+.nashrin-widget-form fieldset.category-list {
+  padding: 5px;
+  margin: 5px 0 35px;
+  border: 1px dashed #9e9e9e;
+}
+
+.nashrin-widget-form .category-item {
+  display: inline-block;
+  background-color: rgba(100, 100, 100, 0.3);
+  padding: 2px 4px;
+  margin: 2px;
+}
+
+.nashrin-widget-form .widget-save {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  padding: 0 5px 3px 5px;
+  width: 100%;
+  height: 35px;
+  transition: all 1s;
+  font-size: 15px;
+  font-weight: bold;
+  border: none;
+  opacity: 0.6;
+  background-color: rgb(184, 240, 20);
+}
+
+.nashrin-widget-form .widget-save:hover {
+  opacity: 1;
+}
+
+#toplevel_page_nashrin-settings:hover {
+  background-color: red;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+@keyframes fadeIn {
+  from {
+    background-color: rgba(184, 240, 20, 0.6);
+  }
+  to {
+    background-color: white;
+  }
+}

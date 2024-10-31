@@ -1,0 +1,22 @@
+@font-face {
+  font-family: 'nashrin';
+  src:  url('nashrin.eot?w77i49');
+  src:  url('nashrin.eot?w77i49#iefix') format('embedded-opentype'),
+    url('nashrin.ttf?w77i49') format('truetype'),
+    url('nashrin.woff?w77i49') format('woff'),
+    url('nashrin.svg?w77i49#nashrin') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.dashicons-nashrin:before {
+  content: '\e900';
+  font-family: "nashrin";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  text-align: center;
+}
